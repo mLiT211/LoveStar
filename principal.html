@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveStar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+            transition: background-color 0.5s ease; /* Animación de cambio de color de fondo */
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #ff99cc;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 8px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #ff99cc;
+            padding: 8px 0;
+            margin: -2px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff99cc;
+        }
+
+        section {
+            padding: 20px;
+            display: none;
+            animation: fadeIn 1s ease; /* Animación de entrada para las secciones */
+        }
+
+        #porque-tu,
+        #mejores-momentos,
+        #canciones {
+            background-color: #fff;
+            text-align: left;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        #porque-tu .titulo,
+        #mejores-momentos .titulo,
+        #canciones .titulo {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        #porque-tu .contenido,
+        #canciones .contenido {
+            background-color: #ff99cc;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #mejores-momentos .contenido,
+        #canciones .contenido {
+            background-color: #ff99cc;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .momento {
+            text-align: center;
+        }
+
+        .momento img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .momento img:hover {
+            transform: rotate(360deg);
+        }
+
+        h2 {
+            color: #ff99cc;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff99cc;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function mostrarSeccion(id) {
+            var secciones = document.querySelectorAll('section');
+            secciones.forEach(function (seccion) {
+                seccion.style.display = 'none';
+            });
+
+            var seccion = document.getElementById(id);
+            if (seccion.style.display === 'none') {
+                seccion.style.display = 'block';
+            } else {
+                seccion.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>LoveStar</h1>
+    </header>
+
+    <nav>
+        <a onclick="mostrarSeccion('porque-tu')">¿Por qué tú?</a>
+        <a onclick="mostrarSeccion('mejores-momentos')">Mejores Momentos</a>
+        <a onclick="mostrarSeccion('canciones')">Canciones</a>
+    </nav>
+
+    <section id="porque-tu">
+        <div class="titulo">
+            <h2>¿Por qué tú?</h2>
+        </div>
+        <div class="contenido">
+            <p>
+                Primero me gustaría decir que no existe una respuesta fácil a esta pregunta, pero estoy seguro de algo, eres el amor de mi vida. En toda mi vida siempre tuve el miedo de mostrarme con mis defectos y me esforzaba demasiado para siempre ser el mejor en todo lo que hacía, supongo que por eso soy tan competitivo, no soy bueno mostrando mis sentimientos ni expresándolos con la gente que me rodea. Pero llego una luz a mi vida, a la que me gusta llamarle mi más dulce contradicción, llegaste tú, si tu Ivanova Acosta o debo decirte Vayis? Realmente contigo se me hace fácil ser quien soy, ese chico sensible y cariñoso que quiere que le den muchos besos y que lo abrasen todo el día, ese chico que es directo y que podría pasar el día entero solo contigo porque eso le hace feliz. Me encanta tu forma de ser, esa amabilidad con la que tratas a las personas y lo sensible y tierna que eres cuando haces pucheros o te enojas, esa carita hermosa que me hace querer observarla todo el día y tener demasiado tiempo para apreciar cada pequeño detalle que tiene. Me encanta esa cintura y ese abdomen que a pesar de que se hinche, según tú, con un vaso de agua me sigue pareciendo lo mas hermoso que he visto en mi vida. Pero volviendo a la pregunta de ¿Por qué tu? Quiero aclarar que es porque incluso esos defectos o complejos que tienes me parecen perfectos, no hay nada mas hermoso que ver esa sonrisa de felicidad o emoción que pones cuando algo te hace feliz, puede que no tenga mucho pero cuando estoy contigo tengo todo. Haces que me sienta seguro y en confianza, me pone feliz el simple hecho de escuchar tu voz o sentirte, no puedo estar más orgulloso de la persona que eres y de el hecho de que seas mi novia, me encanta pensar que vamos a lograr un futuro juntos y que vamos a cumplir nuestros metas agarrados de la mano siendo solo los dos contra el mundo. Actualmente pueda que no tenga tanto, pero sabes, ese poco que tengo quiero que sea para ti, es por eso que no me importa gastarme dinero comprándote cositas o haciéndote detalles porque nada vale mas que esa sonrisa tuya. Somos tan diferentes y eso me encanta, no compartimos gustos musicales y muy pocos de hobbies, pero aprendo mucho sobre ti y lo que te gusta y eso me hace tener otra forma de ver el mundo. No hay respuesta sencilla al ¿Por qué tu? Pero se que quiero que seas solo tu toda mi vida y me voy a esforzar para que así sea, no importan los logros o trofeos que pueda conseguir porque ya te tengo a ti y ese ha sido el mayor logro en mi vida. Te amo como no tienes idea Vayis, a ti y a tus complejos, eres mi felicidad y orgullo entero.
+            </p>
+        </div>
+    </section>
+
+    <section id="mejores-momentos">
+        <div class="titulo">
+            <h2>Mejores Momentos</h2>
+        </div>
+        <div class="contenido">
+            <div class="momento">
+                <img src="img/momento1.jpg.JPG" alt="Momento 1">
+                <p>Primer día de novios</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento2.jpg.jpg" alt="Momento 2">
+                <p>Yo después de convertirme en el hombre más feliz del mundo</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento3.jpg.JPG" alt="Momento 3">
+                <p>La mejor foto juntos</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento4.jpg.JPG" alt="Momento 4">
+                <p>Primera sesion de fotos juntos</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento5.jpg.JPG" alt="Momento 5">
+                <p>No podia faltar esta</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento6.jpg.JPG" alt="Momento 6">
+                <p>Primer desayuno juntos</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento7.jpg.JPG" alt="Momento 7">
+                <p>Que tierna que eres!!!!!</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento8.jpg.JPG" alt="Momento 8">
+                <p>Primera vez cocinando juntos</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento9,jpg.JPG" alt="Momento 9">
+                <p>De fiestaaaaaaaaa</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento10,jpg.JPG" alt="Momento 10">
+                <p>Mimidaaaaa</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento11.jpg.JPG" alt="Momento 11">
+                <p>Mimidaaaaaa de nuevo</p>
+            </div>
+            <div class="momento">
+                <img src="img/momento12.jpg.JPG" alt="Momento 12">
+                <p>Cada vez mas aesthetics</p>
+            </div>
+        </section>
+
+        <section id="canciones">
+            <div class="titulo">
+                <h2>Canciones</h2>
+            </div>
+            <div class="contenido">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2GeQGnawr3ceRrnGA7jEIK?utm_source=generator&theme=0" width="420%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </section>
+    
+        <footer>
+            &copy; 2023 Emilio Jarrin - Todos los derechos reservados
+        </footer>
+    </body>
+    </html>
